@@ -1,0 +1,368 @@
+/* Add smooth scrolling behavior to anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reset styling for anchor tags */
+a {
+    text-decoration: none; /* Remove underlines */
+    color: inherit; /* Inherit the text color from the parent element */
+    cursor: pointer; /* Change cursor to pointer on hover (optional) */
+}
+
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+.about h1{
+    font-size: 4rem; /* Change font size to rem */
+    color: #e66912;
+}
+
+.about p{
+    font-size: 2rem;
+}
+
+
+/* Global styles */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Change font family to 'sans-serif' */
+    font-size: 1rem; /* Change font size to rem */
+    background-color: #212529;
+    color: white;
+}
+
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 1.25rem; /* Change margin to rem */
+}
+
+/* Responsive styles for screens smaller than 769px (adjust breakpoint as needed) */
+@media screen and (max-width: 768px) {
+    .header {
+        display: none;
+    }
+}
+
+/* Reset styling for anchor tags */
+a {
+    text-decoration: none; /* Remove underlines */
+    color: inherit; /* Inherit the text color from the parent element */
+    cursor: pointer; /* Change cursor to pointer on hover (optional) */
+}
+
+/* Set the width of sections to 100% */
+.section {
+    width: 100%;
+    padding: 2.5rem 0; /* Change padding to rem */
+}
+
+/* Style the section content */
+.section-content {
+    max-width: 75rem; /* Change max-width to rem */
+    margin: 0 auto;
+}
+
+/* Example styling for the content within sections */
+.section h2 {
+    font-size: 1.75rem; /* Change font size to rem */
+    margin-bottom: 1.25rem; /* Change margin to rem */
+}
+
+.section p {
+    line-height: 1.6;
+}
+
+/* Style links within sections */
+.section a {
+    text-decoration: underline;
+}
+
+/* Hover effect for links */
+.section a:hover {
+    color: white;
+}
+
+/* Add styles to align all sections to center on mobile screens */
+@media screen and (max-width: 768px) {
+    .section-content {
+        text-align: center;
+    }
+
+    .section {
+        padding: 1.25rem 0;
+    }
+
+    /* Center-align the "Next" and "Previous" buttons */
+    .project-buttons {
+        text-align: center;
+        margin-top: 1.25rem;
+    }
+
+    /* Center-align the contact details in the footer */
+    footer {
+        text-align: center;
+    }
+}
+
+.section-content {
+    margin: 0 auto;
+    padding: 0 1.25rem; /* Change padding to rem */
+}
+
+/* Add styles to add space between the image and text */
+.about {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.about-image {
+    max-width: 50%;
+    margin-left: 1.25rem; /* Change margin to rem */
+    border-radius: 0.625rem; /* Change border-radius to rem */
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
+}
+
+.about-text p{
+    text-align: left;
+}
+
+/* Responsive styles for screens smaller than 768px (adjust breakpoint as needed) */
+@media screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        max-width: 100%;
+        margin-left: 0;
+        margin-bottom: 1.25rem; /* Change margin to rem */
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
+
+/* Update the project cards to be displayed inline */
+.project-card {
+    border: 1px solid #ddd;
+    padding: 1.25rem;
+    max-width: calc(33.33% - 1.25rem);
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    background-color: #553d9b;
+    color: #212529;
+}
+
+.project-card h3,p{
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
+
+.project-card a{
+    text-decoration: none;
+}
+
+.project-card:hover a{
+    background-color: #553d9b;
+    color: orange;
+    transition: background-color 0.5s, color 0.5s; /* Add the transition property here */
+}
+
+/* Clear the right margin for the last project card in a row */
+.project-card:last-child {
+    margin-right: 0;
+}
+
+/* Add this CSS to apply even spacing to project cards in desktop view */
+@media screen and (min-width: 769px) {
+    .project-carousel {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .project-card {
+        max-width: 100%;
+        margin: 0 0 1.25rem 0;
+    }
+}
+
+.project-card img {
+    max-width: 100%;
+    align-self: center;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 1rem 0; /* Change padding to rem */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .nav-list li {
+        display: block;
+        margin-bottom: 1.25rem;
+    }
+}
+
+/* Update the header text alignment to the right */
+header {
+    padding-right: 1rem; /* Change padding to rem */
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 7rem;
+    text-align: right;
+}
+
+/* Update the project cards to be displayed inline */
+.project-card {
+    border: 1px solid #ddd;
+    padding: 1.25rem;
+    margin: 0 0 1.25rem 0;
+    max-width: calc(33.33% - 1.25rem);
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+/* Work navigation styles */
+.work-navigation {
+    text-align: center;
+    margin-top: 1.25rem;
+}
+
+/* Style the work navigation buttons */
+.work-button {
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    border: none;
+    cursor: pointer;
+    background-color: #333; /* Button background color */
+    color: #fff; /* Button text color */
+    border-radius: 0.3125rem; /* Adjust border radius as needed */
+}
+
+/* Add some spacing between the buttons */
+.work-button + .work-button {
+    margin-left: 0.5rem; /* Adjust margin as needed */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .project-card {
+        max-width: 100%;
+        margin: 0 0 1.25rem 0;
+    }
+}
+
+
+/* Add a transparent border and shadow to the sections */
+#projects, #education, #work {
+    width: 100%;
+    padding: 2.5rem 0; /* Change padding to rem */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Shadow */
+}
+
+/* Remove border and shadow from the header and footer */
+.header,footer {
+    border: none;
+    box-shadow: none;
+}
+
+#about {
+    opacity: 1; /* Initially visible */
+    transition: opacity 0.5s ease; /* Add a smooth transition */
+    padding-bottom: 6rem;
+}
+
+#projects h3{
+    font-size: 1.5rem;
+    color: white;
+}
+
+#projects p{
+    font-size: 1rem;
+    text-align: center;
+}
+
+#education p, #work p{
+    color: grey;
+}
+
+.experience {
+    border: 1px solid #ddd;
+    border-radius: 1rem; /* Round border */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Shadow */
+    padding: 1.5rem;
+    margin: 1.5rem 0; /* Adjust margin as needed */
+}
+
+/* Add some margin between the icons */
+.about p a {
+    color: grey; /* Set the icon color */
+    font-size: 2rem;
+}
+
+/* Add hover effect to the icons */
+.about p a:hover {
+    color: white; /* Change the color on hover */
+}
+
+/* Add CSS to align the image to the right */
+.education-item {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the order of flex items */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+}
+
+.education-text h3,p{
+    flex: 1; /* Take up remaining space */
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.education-image {
+    /* Optional styles for image alignment to the right */
+    margin-left: 1rem; /* Adjust margin as needed */
+    /* You can also add max-width or other styles to control the image size */
+}
+
+#projects h2, #education h2, #work h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+#work h3,p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.footer-content p{
+    font-size: 1rem;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Jha</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="about" class="section">
+        <div class="section-content">
+            <div class="about">
+                <img src="Profile.jpg" alt="Abhishek" class="about-image">
+                <div class="about-text">
+                    <h1>Hello, I'm<div style="color: #f8ca00;"><span id="typed-text"></span></div></h1>
+                    <p style="color: grey;">
+                        Final year Undergraduate at VIT, Vellore. 
+                    </p>
+                    <p>
+                        <a href="https://github.com/your-github-profile"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/your-linkedin-profile"><i class="fab fa-linkedin"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="projects" class="section">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <div class="project-carousel">
+                <a href="https://github.com/ajha1303/GreenSort">
+                    <div class="project-card active">
+                        <img src="GreenSort.png" alt="Project 1">
+                        <h3>GreenSort</h3>
+                        <p>I developed a comprehensive waste management system that efficiently handles the collection and segregation of waste.</p>
+                        <p style="color: grey;">Arduino | Web Development</p>
+                        <p style="color: grey;">GitHub <span class="link-icon">&#x1F517;</span></a></p>
+                    </div>
+                </a>
+    
+                <a href="https://github.com/ajha1303/Food-Spoilage-Detection">
+                    <div class="project-card active">
+                        <img src="Food_Spoilage.jpg" alt="Project 2">
+                        <h3>Food Spoilage Detector</h3>
+                        <p>Created an IoT device for food spoilage detection, analyzing Methane Levels and transmitting data to the cloud for ongoing monitoring and quality assessment.</p>
+                        <p style="color: grey;">Arduino | Cloud | Web Development</p>
+                        <p style="color: grey;">GitHub <span class="link-icon">&#x1F517;</span></a></p>
+                    </div>
+                </a>
+    
+                <a href="https://github.com/ajha1303/Bharat-Intern/blob/main/Apple_Stock_Forecasting_with_LSTM.ipynb">
+                    <div class="project-card active">
+                        <img src="Stock.jpg" alt="Project 3">
+                        <h3>Stock Predictor</h3>
+                        <p>Developed an LSTM model for stock price prediction, leveraging historical closing prices to forecast future stock values.</p>
+                        <p style="color: grey;">Machine Learning</p>
+                        <p style="color: grey;">GitHub <span class="link-icon">&#x1F517;</span></a></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>    
+    
+
+    <section id="education" class="section">
+        <div class="section-content">
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="education-text">
+                    <h3>B. Tech, Electrical and Electronics Engineering</h3>
+                    <p>VIT, Vellore</p>
+                    <p>2020 - Current</p>
+                    <p>CGPA: 7.98</p>
+                    <p>Organizer of SELECT Makeathon</p>
+                </div>
+                <div class="education-image">
+                    <img src="Education.png" alt="Your Image">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+    <section id="work" class="section">
+        <div class="section-content">
+            <h2>Work Experience</h2>
+            <!-- You can use JavaScript to toggle between different experiences -->
+            <div class="experience">
+                <div class="experience-text">
+                    <h3>Eveready Industries Ltd.</h3>
+                    <p>Summer Intern</p>                
+                    <p>Studied the power distibution network of the plant.</p>
+                    <p>Worked on planning, auditing and execution of two Energy Saving Projects.</p>
+                </div>
+            </div>
+
+            <div class="experience">
+                <div class="experience-text">
+                    <h3>Bharat Intern</h3>
+                    <p>Data Science Intern</p>
+                    <p>Worked on developing and modifying two ML models.</p>
+                    <p>The first project dealt with stock price prediction based on closing.</p>
+                    <p>The second project dealt with Signature Recogntion and we used MNIST dataset for the same.</p>
+                </div>
+            </div>
+
+            <div class="experience">
+                <div class="experience-text">
+                    <h3>Viral Fission</h3>
+                    <p>Team Lead, Chennai</p>
+                    <p>Managed a team of 20 Campus Ambassadors across 10 colleges in and around Chennai.</p>
+                    <p>Planned and executed new ways to promote the ongoing brand campaigns collaborating with campus clubs.</p>
+                </div>
+            </div>
+            <div class="work-navigation">
+                <button id="prev-button" class="work-button"><i class="fas fa-chevron-left"></i></button>
+                <button id="next-button" class="work-button"><i class="fas fa-chevron-right"></i></button>
+            </div>            
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h3>Contact</h3>
+        <div class="footer-content">
+            <p style="color: grey;"><a href="mailto:ajha1303@gmail.com">Email: ajha1303@gmail.com</a></p>
+            <p style="color: grey;">Phone: +91 7439667467</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</body>
+</html>
